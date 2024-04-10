@@ -43,6 +43,7 @@ function loadAnimatedModelAndAnimations() {
             'right strafe walking', 'right strafe', 'right turn 90', 'standard run', 'walking'
         ];
 
+
         animationNames.forEach((name) => {
             loader.load(`models/Male Locomotion Pack/${name}.fbx`, (anim) => {
                 const action = mixer.clipAction(anim.animations[0]);
